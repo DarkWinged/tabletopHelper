@@ -1,15 +1,16 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-class QFile;
-class QChar;
-class QString;
-class qint8;
+#include <QString>
+#include "skills.h"
+#include "attributes.h"
+
 
 class Character
 {
 public:
     Character();
+    Character(QString loadFile);
     ~Character();
 
     QString name;
@@ -22,9 +23,11 @@ public:
     QString eyes;
     QChar size;
     QChar gender;
-    qint8 cl;
-    qint8 age;
+    int cl;
+    int age;
 
+    Skills skills;
+    Attributes attrs;
 };
 
 #endif // CHARACTER_H
