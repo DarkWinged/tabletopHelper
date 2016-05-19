@@ -8,12 +8,13 @@ class Skill
 {
 public:
     Skill();
-    Skill(QString name, bool trained, int rank);
+    Skill(QString name, QString mod, bool trained, int rank);
     ~Skill();
 
     bool trained;
     int rank;
     QString name;
+    QString mod;
 };
 
 #endif // SKILL_H
