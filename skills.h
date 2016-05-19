@@ -18,6 +18,7 @@ public:
     void setSkillName(QString oldName, QString newName);
     void setSkillRank(QString name, int rank);
     void setSkillTrained(QString name, bool trained);
+    void setSkillModName(QString name, QString mod);
 
     Skill ** getSkills();
     Skill * getSkill(QString name);
